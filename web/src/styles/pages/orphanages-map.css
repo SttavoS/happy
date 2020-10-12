@@ -1,0 +1,60 @@
+#page-app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+#page-app aside {
+    background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+    width: 440px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-app aside h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-top: 64px;
+}
+
+#page-app aside p {
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+#page-app aside footer {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+#page-app aside footer strong {
+    font-weight: 800;
+}
+
+#page-app .leaflet-container {
+    z-index: 5;
+}
+
+#page-app .create-orphanage {
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+    background: #12C3D6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s;
+}
+
+#page-app .create-orphanage:hover {
+    background: #17D6EB;
+}
