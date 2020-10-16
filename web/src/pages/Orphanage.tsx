@@ -87,13 +87,19 @@ export default function Orphanage() {
 								doubleClickZoom={false}
 							>
 								<TileLayer 
-								url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+									url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
 								/>
 								<Marker interactive={false} icon={mapIcon} position={[orphanage.latitude, orphanage.longitude]} />
 							</Map>
 
 							<footer>
-								<a target="_blank" rel="noopener noreferrer" href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}>Ver rotas no Google Maps</a>
+								<a 
+									target="_blank" 
+									rel="noopener noreferrer" 
+									href={`https://www.google.com/maps/dir/?api=1&destination=${orphanage.latitude},${orphanage.longitude}`}
+								>
+									Ver rotas no Google Maps
+								</a>
 							</footer>
 						</div>
 
